@@ -19,3 +19,14 @@
 
     
 }
+
+.selected_card{
+    border: 10px solid black;
+}
+
+
+.correctSelected{
+    color: black;
+    
+    border: 2px solid orange;
+}
