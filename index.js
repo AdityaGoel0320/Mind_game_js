@@ -101,6 +101,8 @@ for (let i = 0; i <= shuffled_array.length - 1; i++) {
     let child_box = document.createElement("div")
     child_box.classList.add("childbox")
     child_box.style.backgroundImage = `url(${shuffled_array[i].img})`
+    child_box.dataset.name = shuffled_array[i].name;
+
     // box.appendChild(child_box)
     box.appendChild(child_box)
 }

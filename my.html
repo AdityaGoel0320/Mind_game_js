@@ -10,13 +10,53 @@
 
 </head>
 <body>
-    <h1 class="flex text-7xl justify-center items-center">Match the images</h1>
-    <div class="box">
-        <div class="grid lg:grid-cols-4 sm : grid-cols-2 md:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-6 gap-10" id="box">
+    <!-- htmlcode -->
+    <h1>Match The <span>Images</span></h1>
+    <!-- main container -->
+    <section id="card-section">
 
-        </div>
-    
-    </div>
-    <script src="index.js"></script>
+    </section>
+
+
+
+    <!-- <script src="index.js"></script> -->
+    <script>
+        let cardsArray = [
+            {
+                'name': 'CSS',
+                'img': 'http://thapatechnical.online/logos/css.png',
+            },
+            {
+                'name': 'HTML',
+                'img': 'http://thapatechnical.online/logos/html5.png',
+            },
+            {
+                'name': 'jQuery',
+                'img': 'http://thapatechnical.online/logos/jquery.png',
+            },
+            {
+                'name': 'JS',
+                'img': 'http://thapatechnical.online/logos/js.png',
+            },
+            {
+                'name': 'Node',
+                'img': 'http://thapatechnical.online/logos/nodejs.png',
+            },
+            {
+                'name': 'Python',
+                'img': 'http://thapatechnical.online/logos/python.png',
+            }
+        ];
+
+
+        for(let i = 0 ; i<=cardsArray.length-1 ; i++){
+            const childDiv = document.createElement('div')
+            childDiv.classList.add('card')
+            childDiv.dataset.name = shuffledChild[i].name;
+            parentDiv.appendChild(childDiv)
+
+        }
+
+    </script>
 </body>
 </html>
